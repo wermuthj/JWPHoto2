@@ -157,11 +157,9 @@ h6 {
 	text-align: center;
 }
 
-.video {
-  width: 50% !important;
-  height: auto !important;
-  margin: 0 auto;
-  display: block;
+video {
+  width: 100% !IMPORTANT;
+  height: auto !IMPORTANT;
 }
 
 
