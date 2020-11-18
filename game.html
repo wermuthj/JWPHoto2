@@ -12,11 +12,11 @@
   <!-- Google Fonts Roboto -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <!-- Material Design Bootstrap -->
-  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="assets/css/mdb.min.css">
   <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -54,9 +54,10 @@
 		
 			</header>   
 		<main>
-            <div style="padding-top: 60px;"></div>
-           <button id="counter">Click me</button>
-           <p id="click" class="click">0</p>
+            <div style="padding-top: 60px; padding-left: 50px;"></div>
+           <button style="border-radius: 1em;" type="button" onClick="hello()">Click me</button>
+		   <p> You have clicked <a id="click">0</a> times</p>
+		   <button type="button" onClick="reset()">Reset</button>
 			
 			
 				
