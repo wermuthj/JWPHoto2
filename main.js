@@ -4,7 +4,6 @@ const app = express()
 const path = require('path')
 
 
-
 var port = 5100
 
 app.get('/', function(req, res) {
@@ -19,4 +18,3 @@ app.get('/', function(req, res) {
   app.listen(port)
 
 
-  
