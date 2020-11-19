@@ -54,12 +54,26 @@
 		
 			</header>   
 		<main>
-            <div style="padding-top: 60px; padding-left: 50px;"></div>
-           <button style="border-radius: 1em;" type="button" onClick="hello()">Click me</button>
+            <div class="game">
+           <button style="outline:none;" class="button" type="button" onClick="hello()">Click me</button>
 		   <p> You have clicked <a id="click">0</a> times</p>
-		   <button type="button" onClick="reset()">Reset</button>
+		   <button style="outline:none;" class="button" type="button" onClick="reset()">Reset</button>
+			</div>
 			
-			
+			<div class="game">
+				<select class="button" style="outline:none;" id="name">
+					<option class="option1" value="John">John</option>
+					<option class="option1" value="Linda">Linda</option>
+					<option class="option1" value="Harry">Harry</option>
+				</select>
+				<select class="button" style="outline:none;" id="info">
+					<option class="option2" value="last">Last Name</option>
+					<option class="option2"value="age">Age</option>
+					<option class="option2" value="height">Height</option>
+				</select>
+				<button class="button" style="outline:none;" onClick="find()">Find out</button></br>
+				<p id="found">Click the Button to find something out</p>
+			</div>
 				
 		
 			
