@@ -19,3 +19,16 @@ $(document).ready(function(){
       $("#cookieConsent").fadeOut(200);
   }); 
 }); 
+
+function ageTester() {
+  var inputValue = document.getElementById('age').value
+  if (inputValue >= 18) {
+    $('.box').fadeOut(200);
+    $('body').css('overflow', 'auto');
+
+  } else {
+    document.write('You must be at least 18 Years old in order to access this page')
+  }
+}
+
+ 
