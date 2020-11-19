@@ -4,8 +4,34 @@ header,
 .view {
   height: 100%;
 }
+body {
+  position: relative;
+  overflow: hidden;
+}
 .header {
   height: auto;
+}
+
+.box {
+  background: #333333;
+  opacity: 99%;
+  border-radius: 1em;
+  color: #f2f2f2;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 20%;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 9;
+  width: 70%;
+  height: 40%;
+  text-align: center;
+  display:block;
+  
+}
+#ageTest {
+ margin-top:10%;
 }
 
 #cookieConsent {
