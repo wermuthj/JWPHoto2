@@ -1,4 +1,4 @@
-const { doesNotMatch } = require("assert");
+// const { doesNotMatch } = require("assert");
 
 var clicks = 0;
 function hello() {
@@ -34,16 +34,14 @@ function ageTester() {
 }
 
 
+var infos = [{last: 'Doe', age: 39, height: 165}, {last: 'Bella', age: 22, height: 193}, {last: 'Jowsey', age: 98, height: 148}];
 
 function find() {
-  var infos = [ {last: 'Doe', age: 39, height: 165}, {last: 'Bella', age: 22, height: 193}, {last: 'Jowsey', age: 98, height: 148}]
-
   var a = document.getElementById('name').selectedIndex;
   var b = document.getElementsByClassName('option1')[a].value;
-
   var c = document.getElementById('info').selectedIndex;
   var d = document.getElementsByClassName('option2')[c].value;
-
+ 
   if (b === 'John') {
     var search = infos[0];
   } else if (b === 'Linda') {
@@ -59,6 +57,5 @@ function find() {
   } else if (d === 'height') {
     var e = " is " + search.height + "cm tall";
   }
- 
-  document.getElementById('found').innerHTML = b + e;
+   document.getElementById('found').innerHTML = b + e;
 }

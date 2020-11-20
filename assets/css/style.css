@@ -11,8 +11,12 @@ body {
 .header {
   height: auto;
 }
-.game {
-  padding-top: 10%;
+.game1 {
+  padding-top: 8%;
+  text-align: center;
+}
+.game2 {
+  padding-top: 2%;
   text-align: center;
 }
 .button {
@@ -183,10 +187,10 @@ h6 {
 }
 
 .border{
-  width: 180px;
+  width: 20%;
   height: 4px;
   background: #333;
-  margin: 60px auto;
+  margin: 20px auto;
 }
 
 .gallery-section .gallery{
