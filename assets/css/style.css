@@ -6,10 +6,23 @@ header,
 }
 body {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .header {
   height: auto;
+}
+.age {
+  color: red;
+  margin-top: 5%;
+  text-align: center;
+}
+.agebutton {
+  border-radius: 1em;
+  margin-top: 1%;
+  width: 100px;
+  height: 35px;
+  background-color: grey;
+  color: white;
 }
 .game1 {
   padding-top: 8%;
