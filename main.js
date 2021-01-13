@@ -38,29 +38,29 @@ var infos = [{last: 'Doe', age: 39, height: 165}, {last: 'Bella', age: 22, heigh
 function find() {
  
  let search; 
- let e;
+ let finding1;
 
-  var a = document.getElementById('name').selectedIndex;
-  var b = document.getElementsByClassName('option1')[a].value;
-  var c = document.getElementById('info').selectedIndex;
-  var d = document.getElementsByClassName('option2')[c].value;
+  var name = document.getElementById('name').selectedIndex;
+  var nameValue = document.getElementsByClassName('option1')[name].value;
+  var infoOption = document.getElementById('info').selectedIndex;
+  var infoValue = document.getElementsByClassName('option2')[infoOption].value;
  
-  if (b === 'John') {
+  if (nameValue === 'John') {
     search = infos[0];
-  } else if (b === 'Linda') {
+  } else if (nameValue === 'Linda') {
     search = infos[1];
-  } else if (b === 'Harry') {
+  } else if (nameValue === 'Harry') {
     search = infos[2];
   }
 
-  if (d === 'last') {
-     e = "'s last name is " + search.last;
-  } else if (d === 'age') {
-    e = " is " + search.age + " years old";
-  } else if (d === 'height') {
-    e = " is " + search.height + "cm tall";
+  if (infoValue === 'last') {
+     finding1 = "'s last name is " + search.last;
+  } else if (infoValue === 'age') {
+    finding1 = " is " + search.age + " years old";
+  } else if (infoValue === 'height') {
+    finding1 = " is " + search.height + "cm tall";
   }
-   document.getElementById('found').innerHTML = b + e;
+   document.getElementById('found').innerHTML = nameValue + finding1;
 }
 
 
