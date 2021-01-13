@@ -1,5 +1,4 @@
-// const { doesNotMatch } = require("assert");
-
+//Click counter
 var clicks = 0;
 function hello() {
   clicks += 1;
@@ -9,7 +8,7 @@ function reset() {
   clicks = 0;
   document.getElementById('click').innerHTML = clicks;
 }
-
+//cookie Consent
 $(document).ready(function(){   
   setTimeout(function () {
       $("#cookieConsent").fadeIn(200);
@@ -21,7 +20,7 @@ $(document).ready(function(){
       $("#cookieConsent").fadeOut(200);
   }); 
 }); 
-
+//Age Verification
 function ageTester() {
   var inputValue = document.getElementById('age').value
   if (inputValue >= 18) {
@@ -33,7 +32,7 @@ function ageTester() {
   }
 }
 
-
+//Name infos
 var infos = [{last: 'Doe', age: 39, height: 165}, {last: 'Bella', age: 22, height: 193}, {last: 'Jowsey', age: 98, height: 148}];
 
 function find() {
@@ -47,7 +46,6 @@ function find() {
   var d = document.getElementsByClassName('option2')[c].value;
  
   if (b === 'John') {
-    //var search = infos[0];
     search = infos[0];
   } else if (b === 'Linda') {
     search = infos[1];
@@ -141,15 +139,8 @@ var articles = [
       filters1 = articles.filter(a => a.ressort == ressort2);
     }
 
-    // let writer = document.getElementById('author').selectedIndex;
-    // let filters2;
-    // let writer2;
-    // if (writer == 0) {
-    //   filters2 = articles.filter(a => a.author == "lara" || a.author == "hugo" || a.author == "heinz");
-    // } else {
-    //   writer2 = document.getElementsByClassName('articles2')[--writer].value;
-    //   filters2 = articles.filter(a => a.author == writer2);
-    // }
+    console.log(ressort2)
+  
 
     let writer = document.getElementById('author').selectedIndex;
     let filters2;
@@ -167,33 +158,18 @@ var articles = [
     } else {
       sortedActivities = filters2.slice().sort((a, b) => b.release - a.release)
     }
-    // let filters3 = filters1 && filters2;
-    // let filters3 = filters2 && filters1;
-    
-
-    // const filteredd = Object.values(filters3); 
-    // console.log(filteredd);
-    // var object1 = "";
-    //  var k;
-    //  for (k = 0; k < filteredd.length; k++) {
-    //    object1 += 
-    //    `title: ${filteredd[k].title}` + 
-    //    `ressort: ${filteredd[k].ressort}<br>`+
-    //    `text: ${filteredd[k].text}<br>`+
-    //    `author: ${filteredd[k].author}<br>`;
-    //  }
-    // const filteredd = Object.values(filters2); 
+   
     const filteredd = Object.values(sortedActivities); 
     console.log(filteredd);
     var object1 = "";
-     var k;
-     for (k = 0; k < filteredd.length; k++) {
+     var loop;
+     for (loop = 0; loop < filteredd.length; loop++) {
        object1 += 
-       `title: ${filteredd[k].title}` + 
-       `ressort: ${filteredd[k].ressort}<br>`+
-       `text: ${filteredd[k].text}<br>`+
-       `author: ${filteredd[k].author}<br>`+
-       `release: ${filteredd[k].release}<br><br>`;
+       `title: ${filteredd[loop].title}` + 
+       `ressort: ${filteredd[loop].ressort}<br>`+
+       `text: ${filteredd[loop].text}<br>`+
+       `author: ${filteredd[loop].author}<br>`+
+       `release: ${filteredd[loop].release}<br><br>`;
      }
    
      document.getElementById('found1').innerHTML = object1;
