@@ -145,7 +145,19 @@ document.getElementById("checkbox").checked = true;
 // Uncheck
 document.getElementById("checkbox").checked = false;
 
+//function myFunction() {
+  //let bt = document.getElementById("mySubmit");
+ // bt.disabled = false;
+//}
 
+var button = document.getElementById("mySubmit")
+button.disabled = true;
+
+if (document.getElementById("checkbox").checked = true) {
+  button.disabled = false;
+} /*else {
+  button.disabled = true;
+} */
 
 // Event listeners
 form.addEventListener('submit', function(e) {
@@ -155,3 +167,4 @@ form.addEventListener('submit', function(e) {
   validateForm();
 });
  
+
