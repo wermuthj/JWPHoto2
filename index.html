@@ -1,169 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Janic Wermuth Photography</title>
-  
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <link rel="stylesheet" href="mdb.min.css">
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validator</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Please register to get full access.</h2>
+        <!-- Aufgabe 1a: Fügen Sie Eingabefelder für Vor- und Nachname hinzu  -->
 
+        <!-- Aufgabe 1b: Fügen Sie ein Eingabefeld für eine Telefonnummer hinzu -->
 
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <small>Error message</small>
+        </div>
+        <!-- Aufgabe 1c: Fügen Sie ein weiteres Passwortfeld (zur Bestätigung des ersten Passworts) hinzu -->
 
+        <button type="submit">Submit</button>
+      </form>
+    </div>
 
-	<script src='main.js'></script>
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-</head>
-	
-<body >
-	
-	<header>	
-			<!--Navbar-->
-				<nav class="navbar fixed-top navbar-expand-lg navbar-light grey">
-
-				  <a class="navbar-brand" href="#">JW</a>
-
-				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-					aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				  </button>
-
-				  <div class="collapse navbar-collapse" id="basicExampleNav">
-
-					<ul class="navbar-nav mr-auto">
-					  <li class="nav-item ">
-						<a class="nav-link" href="#">Home</a>
-					  </li>
-					  <li class="nav-item ">
-						<a class="nav-link" href="#umfrage1">Umfrage 1</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#umfrage2">Umfrage 2</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#umfrage3">Umfrage 3</a>
-					  </li>
-					<li class="nav-item">
-						<a class="nav-link" href="#umfrage4">Umfrage 4</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#umfrage5">Umfrage 5</a>
-					  </li>
-					
-									
-					
-										 
-				  </div>
-				
-						
-					
-				</nav>
-				  
-
-				
-				<!--/.Navbar-->
-		
-			<div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;"> <!-- BILD MUSS NOCH AUSGEWECHSELT WERDEN -->
-					<div class="mask rgba-gradient align-items-center">
-					  <div class="container padding-top" >
-						<!--Grid row-->
-						<div class="row">
-						  <!--Grid column-->
-						  <div class="col-md-6 white-text text-center  mt-xl-5 mb-5  " >
-							<h1 class="h1-responsive font-weight-bold mt-sm-5">Janic Wermuth Photography  </h1>
-							<hr class="hr-light">
-							
-							<a class="btn btn-white" href="#gallery">Learn more</a>
-						  </div>
-						</div>
-					  </div>
-					</div>
-				  </div>
-			</header>   
-			
-		<main>
-		
-		
-
-
-			<!--Gallery-->
-			<a id="umfrage1"></a>
-			<input type="color" value="#FF0000">	
-			<br/><br/><br/><br/><br/>		
-			
-				<!--Services-->
-				<a id="umfrage2"></a>
-				<input type="date" value="2015-11-12" min="2015-01-01" max="2015-12-30">
-				<br/><br/><br/><br/><br/>
-		
-				<!--Team-->
-				<a id="umfrage3"></a>
-				<input type="time" value="15:15" min="08:00" max="17:00">
-				<br/><br/><br/><br/><br/>
-					
-				<div class="umfrage4">
-				
-							
-				<a id="umfrage5"></a>
-		
-				
-			
-		
-		</main>
-	</body>
-	
-		
-	<footer class="page-footer font-small footer-grey">
-
-	 <div class="container">
-
-		<!-- Grid row-->
-		<div class="row" style="height:80px;">
-
-			 <!-- Grid column -->
-			<div class="col-md-12 py-5">
-			<div class="mb-5 flex-center">
-
-				  <!-- Facebook -->
-				  <a class="fb-ic" href="https://www.facebook.com/janic.wermuth.3">
-					<i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-				  </a>
-				  <!-- Twitter -->
-				  <a class="tw-ic" href="https://twitter.com/JanicWermuth">
-					<i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-				  </a>
-				  
-				  <!--Linkedin -->
-				  <a class="li-ic" href="https://www.linkedin.com/in/janic-wermuth-4878111ab/">
-					<i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-				  </a>
-				  <!--Instagram-->
-				  <a class="ins-ic" href="https://www.instagram.com/janicwermuth.photography/">
-					<i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-				  </a>
-				 
-				</div>
-			  </div>
-			  <!-- Grid column -->
-
-			</div>
-			<!-- Grid row-->
-
-		  </div>
-		  <!-- Footer Elements -->
-
-		  <!-- Copyright -->
-		  <div class="footer-copyright text-center py-3">&copy; 2020 Copyright:
-			<a href="https://mdbootstrap.com/"> Janic Wermuth Photography</a>
-		  </div>
-		  <!-- Copyright -->
-
-		</footer>
-		<!-- Footer -->
-	
-	
+    <script src="validate-inputs.js"></script>
+  </body>
 </html>
