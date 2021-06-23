@@ -4,9 +4,13 @@
 */
 
 const form = document.getElementById('form');
+const phonenumber = document.getElementById('phonenumber');
+const firstname = document.getElementById('firstname');
+const lastname = document.getElementById('lastname');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
+const password2 = document.getElementById('password2');
 
 // Show input error message
 function showError(input, message) {
@@ -76,9 +80,38 @@ function checkLength(input, min, max) {
     Validieren Sie, ob die beiden Passwörter übereinstimmen.
     Falls sie nicht übereinstimmen, geben Sie (ähnlich wie in den anderen Beispielen)
     eine Fehlermeldung dem Formular aus.
-*/
-// Check passwords match
 
+*/
+
+// check password more than 6 long
+function checkLength2(input) {
+  if (input.value.length < 6) {
+    showError(
+      input,
+      `${getFieldName(input)} must be at least ${min} characters`
+  );
+} else if (input.value.length > 15) {
+  showError(
+      input,
+      `${getFieldName(input)} must be less than ${max} characters`
+  );
+} else {
+  showSuccess(input);
+}
+
+  }
+
+// Check passwords match
+var check = function() {
+  if (document.getElementById('password').value ==
+    document.getElementById('password2').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'matching';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'not matching';
+  }
+}
 // Get fieldname
 function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
@@ -110,3 +143,4 @@ form.addEventListener('submit', function(e) {
   //First validate form
   validateForm();
 });
+ 
