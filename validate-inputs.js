@@ -11,6 +11,7 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
+const checkbox = document.getElementById('checkbox')
 
 // Show input error message
 function showError(input, message) {
@@ -35,6 +36,7 @@ function checkEmail(input) {
     showError(input, 'Email is not valid');
   }
 }
+
 
 /* Aufgabe:
     Validieren Sie die Mobile-Nummer ähnlich wie bei der Email mit einer
@@ -117,6 +119,7 @@ function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
 
+
 function validateForm(){
   if(!checkRequired([username, email, password])){
     //Aufgabe: Validierung der Länge für Vorname (2 bis 20) und Nachname (2 bis 50)
@@ -134,6 +137,14 @@ function validateForm(){
     * */
   }
 }
+
+// Check
+
+document.getElementById("checkbox").checked = true;
+
+// Uncheck
+document.getElementById("checkbox").checked = false;
+
 
 
 // Event listeners
