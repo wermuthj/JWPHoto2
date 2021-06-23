@@ -4,34 +4,12 @@ header,
 .view {
   height: 100%;
 }
-body {
-  position: relative;
-  /* overflow: hidden; */
-}
+
 .header {
   height: auto;
 }
-.age {
-  color: red;
-  margin-top: 5%;
-  text-align: center;
-}
-.agebutton {
-  border-radius: 1em;
-  margin-top: 1%;
-  width: 100px;
-  height: 35px;
-  background-color: grey;
-  color: white;
-}
-.game1 {
-  padding-top: 8%;
-  text-align: center;
-}
-.game2 {
-  padding-top: 2%;
-  text-align: center;
-}
+
+
 .button {
   background-color: white;
   border: 1px solid black;
