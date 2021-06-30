@@ -11,7 +11,9 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
-const checkbox = document.getElementById('checkbox')
+const checkbox = document.getElementById('checkbox');
+
+
 
 // Show input error message
 function showError(input, message) {
@@ -85,23 +87,7 @@ function checkLength(input, min, max) {
 
 */
 
-// check password more than 6 long
-function checkLength2(input) {
-  if (input.value.length < 6) {
-    showError(
-      input,
-      `${getFieldName(input)} must be at least ${min} characters`
-  );
-} else if (input.value.length > 15) {
-  showError(
-      input,
-      `${getFieldName(input)} must be less than ${max} characters`
-  );
-} else {
-  showSuccess(input);
-}
 
-  }
 
 // Check passwords match
 var check = function() {
@@ -121,7 +107,7 @@ function getFieldName(input) {
 
 
 function validateForm(){
-  if(!checkRequired([username, email, password])){
+  if(!checkRequired([username, email, password, firstname, lastname, phonenumber, password2])){
     //Aufgabe: Validierung der Länge für Vorname (2 bis 20) und Nachname (2 bis 50)
     checkLength(username, 3, 15);
     checkLength(password, 6, 25);
@@ -140,7 +126,6 @@ function validateForm(){
 
 // Check
 
-document.getElementById("checkbox").checked = true;
 
 // Uncheck
 document.getElementById("checkbox").checked = false;
