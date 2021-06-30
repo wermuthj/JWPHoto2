@@ -93,11 +93,14 @@ function checkLength(input, min, max) {
 var check = function() {
   if (document.getElementById('password').value ==
     document.getElementById('password2').value) {
-    document.getElementById('message').style.color = 'green';
-    document.getElementById('message').innerHTML = 'matching';
+    document.getElementById('message2').style.color = '#2ecc71';
+    document.getElementById('password2').style.borderColor = '#2ecc71';
+    document.getElementById('message2').innerHTML = 'matching';
   } else {
-    document.getElementById('message').style.color = 'red';
-    document.getElementById('message').innerHTML = 'not matching';
+    document.getElementById('message2').style.color = '#e74c3c';
+    document.getElementById('password2').style.borderColor = '#e74c3c';
+
+    document.getElementById('message2').innerHTML = 'not matching';
   }
 }
 // Get fieldname

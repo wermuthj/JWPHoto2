@@ -99,3 +99,9 @@ h2 {
 button[type="submit"]:disabled {
   background-color: grey;
 }
+
+#message2 {
+  font-size: .75rem;
+
+
+}
