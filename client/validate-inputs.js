@@ -114,6 +114,8 @@ function validateForm(){
     //Aufgabe: Validierung der Länge für Vorname (2 bis 20) und Nachname (2 bis 50)
     checkLength(username, 3, 15);
     checkLength(password, 6, 25);
+    checkLength(firstname, 2, 20);
+    checkLength(lastname, 2, 50);
     /* Aufgabe:
       Validierung der Telefonnumer ähnlich wie bei der Email mit einer
       Regular expression (regex). Für eine geeignete regex suchen Sie

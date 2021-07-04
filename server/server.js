@@ -57,8 +57,11 @@ app.post('/register', (req, res) => {
         "id": uuidv4(),
         "username": req.body.user.username,
         "email": req.body.user.email,
-        "password": req.body.user.password
-    }
+        "password": req.body.user.password,
+        "lastname": req.body.user.lastname,
+        "firstname": req.body.user.firstname,
+        "phonenumber": req.body.user.phonenumber,
+        }
 
     let result = Validation.validateUser(userObj);
     if (result.isNotValid) {
