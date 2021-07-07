@@ -9,7 +9,7 @@ function showSuccess(id) {
 }
 
 // Check email is valid
-function checkEmail(id,input) {
+function checkEmail(id, input) {
     //Default: is valid
     let result = {
         isNotValid: false,
@@ -27,7 +27,7 @@ function checkEmail(id,input) {
 
 
 // Check Phone is valid
-function checkPhonenumber(id,input) {
+function checkPhonenumber(id, input) {
     //Default: is valid
     let result = {
         isNotValid: false,
@@ -75,7 +75,7 @@ function checkLength(id, input, min, max) {
         result = {
             isNotValid: true,
             msg: showError(id,
-            `${id} must be at least ${min} characters`)
+                `${id} must be at least ${min} characters`)
         }
     } else if (input.length > max) {
         result = {
@@ -89,48 +89,74 @@ function checkLength(id, input, min, max) {
 
 
 
-
-
 function checkPassword(id, input, id2, input2) {
+    let result = {
+        isNotValid: false,
+        msg: showSuccess(id)
+    }
+
+    let passw1 = input.trim();
+    let passw2 = input2.trim();
+
+    console.log(`${passw1}, ${passw2}`);
+
+    //if not same return false
+    if (passw1 !== passw2) {
+        result = {
+            isNotValid: true,
+            msg: showError(id, `dont work`)
+        }
+    }
+    else {
+        result = {
+            isNotValid: false,
+            msg: showSuccess(id)
+        }
+    }
+}
+
+
+
+/*function checkPassword(id, input, id2, input2) {
     
     let result = {
         isNotValid: true,
         //msg: showError(id, `Passwords  ${id} dont match`)
         msg: showError(id, ` Input Value ${input.value}  input length ${input.length} input2 value ${input2.value} input2 length ${input2.length}`)
     }
-    return result;
+    return result; */
 
-    /*if (input.value == input2.value) {
-        result = {
-            isNotValid: false,
-            msg: showSuccess(id)
-            
-        } */
-    }    
-
-
-
-
-    //Default: is valid
-    /*let result = {
+/*if (input.value == input2.value) {
+    result = {
         isNotValid: false,
         msg: showSuccess(id)
-    }
-
-    if (id.input == id.input) {
-        result = {
-            isNotValid: true,
-            msg: showError(id, `Passwords  ${id} dont match`)
-        }
+        
     } */
-    
-    /*if (document.getElementById('password').value ==
-    document.getElementById('password2').value) {
-        result = {
-            isNotValid: true,
-            msg: showError(id, 'Phonenumber is not valid')
-        }
-    }*/
+
+
+
+
+
+//Default: is valid
+/*let result = {
+    isNotValid: false,
+    msg: showSuccess(id)
+}
+
+if (id.input == id.input) {
+    result = {
+        isNotValid: true,
+        msg: showError(id, `Passwords  ${id} dont match`)
+    }
+} */
+
+/*if (document.getElementById('password').value ==
+document.getElementById('password2').value) {
+    result = {
+        isNotValid: true,
+        msg: showError(id, 'Phonenumber is not valid')
+    }
+}*/
 
 
 
@@ -151,7 +177,7 @@ function checkPassword(id, input, id2, input2) {
       document.getElementById('message2').innerHTML = 'not matching';
     }
   } */
-  
+
 
 /**
  *  Export validation functions for further usage.
@@ -163,5 +189,5 @@ module.exports = {
     checkRequired,
     checkPhonenumber,
     checkPassword
-    
+
 }

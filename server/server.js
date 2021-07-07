@@ -61,7 +61,7 @@ app.post('/register', (req, res) => {
         "lastname": req.body.user.lastname,
         "firstname": req.body.user.firstname,
         "phonenumber": req.body.user.phonenumber,
-        "password2" : req.body.user.password2,
+        "password2" : req.body.user.password2
         }
 
     let result = Validation.validateUser(userObj);
@@ -77,7 +77,7 @@ app.post('/register', (req, res) => {
                 data.push(userObj);
                 return data;
             })
-            .then(data => userRepo.save(data))
+            .then(data => userRepo.save(dalta))
             .catch(error => {
                 console.error(error);
             });

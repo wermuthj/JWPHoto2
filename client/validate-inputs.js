@@ -97,6 +97,23 @@ function checkLength(input, min, max) {
 
 
 // Check passwords match
+
+  function checkPassword(input1, input2) {
+    let passw1 = input1.value.trim();
+    let passw2 = input2.value.trim();
+
+    console.log(`${passw1}, ${passw2}`);
+
+    //if not same return false
+    if (passw1 !== passw2) {
+      console.log("\nPassword did not match: Please try again.")
+
+    }
+    else {
+      alert("I love u it works.  ")
+    }
+  }
+/*
 var checkPassword = function() {
   if (document.getElementById('password').value ==
     document.getElementById('password2').value) {
@@ -109,7 +126,7 @@ var checkPassword = function() {
 
     document.getElementById('message2').innerHTML = 'not matching';
   }
-}
+} */
 // Get fieldname
 function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
@@ -130,7 +147,7 @@ function validateForm(){
     * */
     checkPhone(phonenumber)
     checkEmail(email);
-    checkPassword(password);
+    checkPassword(password, password2);
     /* Aufgabe:
       Validierung Sie die beiden Passwörter, damit password
       mit password2 übereinstimmt.

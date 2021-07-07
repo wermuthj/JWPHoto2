@@ -36,7 +36,7 @@ function validateUser(userObj) {
     result = validateLib.checkLength("username",userObj.username, 3, 15);
     if (result.isNotValid) { return result; }
 
-    result = validateLib.checkLength("password", userObj.password, 6, 25);
+    result = validateLib.checkLength("password", userObj.password, 6, 25);  
     if (result.isNotValid) { return result; }
 
     //check email syntax
