@@ -87,6 +87,72 @@ function checkLength(id, input, min, max) {
     return result;
 }
 
+
+
+
+
+function checkPassword(id, input, id2, input2) {
+    
+    let result = {
+        isNotValid: true,
+        //msg: showError(id, `Passwords  ${id} dont match`)
+        msg: showError(id, ` Input Value ${input.value}  input length ${input.length} input2 value ${input2.value} input2 length ${input2.length}`)
+    }
+    return result;
+
+    /*if (input.value == input2.value) {
+        result = {
+            isNotValid: false,
+            msg: showSuccess(id)
+            
+        } */
+    }    
+
+
+
+
+    //Default: is valid
+    /*let result = {
+        isNotValid: false,
+        msg: showSuccess(id)
+    }
+
+    if (id.input == id.input) {
+        result = {
+            isNotValid: true,
+            msg: showError(id, `Passwords  ${id} dont match`)
+        }
+    } */
+    
+    /*if (document.getElementById('password').value ==
+    document.getElementById('password2').value) {
+        result = {
+            isNotValid: true,
+            msg: showError(id, 'Phonenumber is not valid')
+        }
+    }*/
+
+
+
+
+
+
+
+/*function checkPassword(id, input) {
+    if (document.getElementById('password').value ==
+      document.getElementById('password2').value) {
+      document.getElementById('message2').style.color = '#2ecc71';
+      document.getElementById('password2').style.borderColor = '#2ecc71';
+      document.getElementById('message2').innerHTML = 'matching';
+    } else {
+      document.getElementById('message2').style.color = '#e74c3c';
+      document.getElementById('password2').style.borderColor = '#e74c3c';
+  
+      document.getElementById('message2').innerHTML = 'not matching';
+    }
+  } */
+  
+
 /**
  *  Export validation functions for further usage.
  *  function to export WITHOUT brackets!
@@ -95,5 +161,7 @@ module.exports = {
     checkEmail,
     checkLength,
     checkRequired,
-    checkPhonenumber
+    checkPhonenumber,
+    checkPassword
+    
 }

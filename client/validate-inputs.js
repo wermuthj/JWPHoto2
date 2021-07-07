@@ -97,7 +97,7 @@ function checkLength(input, min, max) {
 
 
 // Check passwords match
-var check = function() {
+var checkPassword = function() {
   if (document.getElementById('password').value ==
     document.getElementById('password2').value) {
     document.getElementById('message2').style.color = '#2ecc71';
@@ -130,6 +130,7 @@ function validateForm(){
     * */
     checkPhone(phonenumber)
     checkEmail(email);
+    checkPassword(password);
     /* Aufgabe:
       Validierung Sie die beiden Passwörter, damit password
       mit password2 übereinstimmt.

@@ -20,6 +20,18 @@ function validateUser(userObj) {
     result = validateLib.checkRequired("phonenumber", userObj.phonenumber);
     if (result.isNotValid) { return result; }
 
+    result = validateLib.checkRequired("firstname", userObj.firstname);
+    if (result.isNotValid) { return result; }
+
+    result = validateLib.checkRequired("lastname", userObj.lastname);
+    if (result.isNotValid) { return result; }
+
+    result = validateLib.checkRequired("password", userObj.password);
+    if (result.isNotValid) { return result; }
+
+    result = validateLib.checkRequired("password2", userObj.password2);
+    if (result.isNotValid) { return result; }
+
     //check length
     result = validateLib.checkLength("username",userObj.username, 3, 15);
     if (result.isNotValid) { return result; }
@@ -31,8 +43,13 @@ function validateUser(userObj) {
     result = validateLib.checkEmail("email", userObj.email);
     if (result.isNotValid) { return result; }
 
+    //check PhoneNumber
     result = validateLib.checkPhonenumber("phonenumber", userObj.phonenumber);
     if (result.isNotValid) { return result; } 
+
+    result = validateLib.checkPassword("password", userObj.password, "password2", userObj.password2 );
+    if (result.isNotValid) { return result; }
+
 
     //all inputs are valid and isNotValid=false
     return false;
