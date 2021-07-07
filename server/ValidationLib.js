@@ -25,6 +25,23 @@ function checkEmail(id,input) {
     return result;
 }
 
+
+// Check Phone is valid
+function checkPhonenumber(id,input) {
+    //Default: is valid
+    let result = {
+        isNotValid: false,
+        msg: showSuccess(id)
+    }
+    const re = /^(?:(?:|0{1,2}|\+{0,2})41(?:|\(0\))|0)([1-9]\d)(\d{3})(\d{2})(\d{2})$/;
+    if (!re.test(input.trim())) {
+        result = {
+            isNotValid: true,
+            msg: showError(id, 'Phonenumber is not valid')
+        }
+    }
+    return result;
+}
 //TODO: Check article for throwing errors in node js
 // https://stackoverflow.com/questions/33086247/throwing-an-error-in-node-js
 
@@ -77,5 +94,6 @@ function checkLength(id, input, min, max) {
 module.exports = {
     checkEmail,
     checkLength,
-    checkRequired
+    checkRequired,
+    checkPhonenumber
 }

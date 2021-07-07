@@ -4,5 +4,19 @@
     "username": "fschmid",
     "email": "sosoemail@beispiel.ch",
     "password": "1234567"
+  },
+  {
+    "id": "efaa50b6-a2da-44aa-be1d-baf213af25bc",
+    "username": "SDFASDFSA",
+    "email": "xx@xxxx.com",
+    "password": "12aa57",
+    "phonenumber": "41799474390"
+  },
+  {
+    "id": "62b715a1-b65d-4a1e-bdc4-60f5cf08596e",
+    "username": "SDFASDFSA",
+    "email": "xx@xxxx.com",
+    "password": "12aa57",
+    "phonenumber": "41799474390"
   }
 ]

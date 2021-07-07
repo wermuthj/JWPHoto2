@@ -46,7 +46,14 @@ function checkEmail(input) {
     im Internet nach "javascript regular expression for mobile number".
 */
 // Check phone is valid
-
+function checkPhone(input) {
+  const re = /^(?:(?:|0{1,2}|\+{0,2})41(?:|\(0\))|0)([1-9]\d)(\d{3})(\d{2})(\d{2})$/;
+  if (re.test(input.value.trim())) {
+    showSuccess(input);
+  } else {
+    showError(input, 'Phonenumber is not valid');
+  }
+}
 
 // Check required fields
 function checkRequired(inputArr) {
@@ -116,11 +123,12 @@ function validateForm(){
     checkLength(password, 6, 25);
     checkLength(firstname, 2, 20);
     checkLength(lastname, 2, 50);
-    /* Aufgabe:
-      Validierung der Telefonnumer ähnlich wie bei der Email mit einer
+    /* Aufgabe: 
+    Validierung der Telefonnumer ähnlich wie bei der Email mit einer
       Regular expression (regex). Für eine geeignete regex suchen Sie
       im Internet nach "javascript regular expression for mobile number"
     * */
+    checkPhone(phonenumber)
     checkEmail(email);
     /* Aufgabe:
       Validierung Sie die beiden Passwörter, damit password
