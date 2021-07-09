@@ -47,7 +47,7 @@ function validateUser(userObj) {
     result = validateLib.checkPhonenumber("phonenumber", userObj.phonenumber);
     if (result.isNotValid) { return result; } 
 
-    result = validateLib.checkPassword("password", userObj.password, "password2", userObj.password2 );
+    result = validateLib.checkPassword("password", userObj.password, userObj.password2 );
     if (result.isNotValid) { return result; }
 
 

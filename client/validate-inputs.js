@@ -97,6 +97,32 @@ function checkLength(input, min, max) {
 
 
 // Check passwords match
+/*function checkPassword(id, input1, input2) {
+  let result = {
+    isNotValid: false,
+    msg: showSuccess(id)
+}
+
+let passw1 = input.trim();
+let passw2 = input2.trim();
+
+console.log(`${passw1}, ${passw2}`);
+
+//if not same return false
+if (passw1 !== passw2) {
+    result = {
+        isNotValid: true,
+        msg: showError(id, `dont work`)
+    }
+}
+else {
+    result = {
+        isNotValid: false,
+        msg: showSuccess(id)
+    }
+}
+} */
+
 
   function checkPassword(input1, input2) {
     let passw1 = input1.value.trim();
@@ -106,13 +132,21 @@ function checkLength(input, min, max) {
 
     //if not same return false
     if (passw1 !== passw2) {
-      console.log("\nPassword did not match: Please try again.")
+      showError(
+        input2,
+        `${getFieldName(input2)} must be a matching Password`
+    );
+      //console.log("\nPassword did not match: Please try again.")
 
     }
     else {
-      alert("I love u it works.  ")
+      showSuccess(input1);
+      showSuccess(input2);
+      //alert("I love u it works.  ")
     }
   }
+
+  
 /*
 var checkPassword = function() {
   if (document.getElementById('password').value ==

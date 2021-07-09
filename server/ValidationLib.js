@@ -89,7 +89,7 @@ function checkLength(id, input, min, max) {
 
 
 
-function checkPassword(id, input, id2, input2) {
+function checkPassword(id, input, input2) {
     let result = {
         isNotValid: false,
         msg: showSuccess(id)
