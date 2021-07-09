@@ -25,6 +25,39 @@ function checkEmail(id, input) {
     return result;
 }
 
+// Check Lastname is valid
+function checkLastname(id, input) {
+    //Default: is valid
+    let result = {
+        isNotValid: false,
+        msg: showSuccess(id)
+    }
+    const re = (/^[A-Za-z]+$/);
+    if (!re.test(input.trim())) {
+        result = {
+            isNotValid: true,
+            msg: showError(id, 'Lastname is not valid')
+        }
+    }
+    return result;
+}
+
+// Check Lastname is valid
+function checkFirstname(id, input) {
+    //Default: is valid
+    let result = {
+        isNotValid: false,
+        msg: showSuccess(id)
+    }
+    const re = (/^[A-Za-z]+$/);
+    if (!re.test(input.trim())) {
+        result = {
+            isNotValid: true,
+            msg: showError(id, 'Firstname is not valid')
+        }
+    }
+    return result;
+}
 
 // Check Phone is valid
 function checkPhonenumber(id, input) {
@@ -218,6 +251,8 @@ module.exports = {
     checkLength,
     checkRequired,
     checkPhonenumber,
-    checkPassword
+    checkPassword,
+    checkFirstname,
+    checkLastname,
 
 }

@@ -50,6 +50,12 @@ function validateUser(userObj) {
      result = validateLib.checkPassword("password", userObj.password, userObj.password2 );
     if (result.isNotValid) { return result; }
 
+    result = validateLib.checkLastname("lastname", userObj.lastname);
+    if (result.isNotValid) { return result; }
+
+    result = validateLib.checkFirstname("firstname", userObj.firstname);
+    if (result.isNotValid) { return result; }
+
 
     //all inputs are valid and isNotValid=false
     return false;

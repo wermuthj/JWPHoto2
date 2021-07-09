@@ -132,5 +132,95 @@
     "firstname": "Janic",
     "phonenumber": "41763931066",
     "password2": "12345678"
+  },
+  {
+    "id": "1ccc6a23-ad30-4580-92df-66b7cf50b163",
+    "username": "SDFASDFSA",
+    "email": "xx@xxxx.com",
+    "password": "12aa5789",
+    "lastname": "aba",
+    "firstname": "as",
+    "phonenumber": "+41799474390",
+    "password2": "12aa5789"
+  },
+  {
+    "id": "03936501-f9b2-4536-b3bc-38c8d162b450",
+    "username": "SDFASDFSA",
+    "email": "xx@xxxx.com",
+    "password": "12aa5789",
+    "lastname": "aba",
+    "firstname": "as",
+    "phonenumber": "+41799474390",
+    "password2": "12aa5789"
+  },
+  {
+    "id": "2d438973-0404-4996-bece-7dff7e8dfb2e",
+    "username": "SDFASDFSA",
+    "email": "xx@xxxx.com",
+    "password": "12aa5789",
+    "lastname": "1",
+    "firstname": "as",
+    "phonenumber": "+41799474390",
+    "password2": "12aa5789"
+  },
+  {
+    "id": "45dbe4f0-146f-479c-826c-56f0733546e4",
+    "username": "SDFASDFSA",
+    "email": "xx@xxxx.com",
+    "password": "12aa5789",
+    "lastname": "1",
+    "firstname": "as",
+    "phonenumber": "+41799474390",
+    "password2": "12aa5789"
+  },
+  {
+    "id": "95d788a4-e556-4556-b991-8b9b1414183d",
+    "username": "SDFASDFSA",
+    "email": "xx@xxxx.com",
+    "password": "12aa5789",
+    "lastname": "1",
+    "firstname": "as",
+    "phonenumber": "+41799474390",
+    "password2": "12aa5789"
+  },
+  {
+    "id": "f3016418-209d-4d26-9a23-cbb837d334e4",
+    "username": "SDFASDFSA",
+    "email": "xx@xxxx.com",
+    "password": "12aa5789",
+    "lastname": "asdwasd",
+    "firstname": "as",
+    "phonenumber": "+41799474390",
+    "password2": "12aa5789"
+  },
+  {
+    "id": "90d6171b-97f6-4a76-a90a-52e9c6b80fdb",
+    "username": "SDFASDFSA",
+    "email": "xx@xxxx.com",
+    "password": "12aa5789",
+    "lastname": "asdwasd",
+    "firstname": "asdwasd",
+    "phonenumber": "+41799474390",
+    "password2": "12aa5789"
+  },
+  {
+    "id": "5a29800b-168d-4c4e-a8de-8a20e49d047e",
+    "username": "SDFASDFSA",
+    "email": "xx@xxxx.com",
+    "password": "12aa5789",
+    "lastname": "asdwasd",
+    "firstname": "asdwasd",
+    "phonenumber": "+41799474390",
+    "password2": "12aa5789"
+  },
+  {
+    "id": "ed946317-bf3a-46ea-a8d1-fe42f34c23c1",
+    "username": "SDFASDFSA",
+    "email": "xx@xxxx.com",
+    "password": "12aa5789",
+    "lastname": "asdwasd",
+    "firstname": "a",
+    "phonenumber": "+41799474390",
+    "password2": "12aa5789"
   }
 ]

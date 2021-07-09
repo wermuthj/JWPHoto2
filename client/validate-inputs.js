@@ -54,6 +54,25 @@ function checkPhone(input) {
     showError(input, 'Phonenumber is not valid');
   }
 }
+// Check Lastname is valid
+function checkLastname(input) {
+  const re = (/^[A-Za-z]+$/);
+  if (re.test(input.value.trim())) {
+    showSuccess(input);
+  } else {
+    showError(input, 'Lastname is not valid');
+  }
+}
+
+// Check Firstname is valid
+function checkFirstname(input) {
+  const re = (/^[A-Za-z]+$/);
+  if (re.test(input.value.trim())) {
+    showSuccess(input);
+  } else {
+    showError(input, 'Firstname is not valid');
+  }
+}
 
 // Check required fields
 function checkRequired(inputArr) {
@@ -179,9 +198,11 @@ function validateForm(){
       Regular expression (regex). Für eine geeignete regex suchen Sie
       im Internet nach "javascript regular expression for mobile number"
     * */
-    checkPhone(phonenumber)
+    checkPhone(phonenumber);
     checkEmail(email);
     checkPassword(password, password2);
+    checkFirstname(firstname);
+    checkLastname(lastname);
     /* Aufgabe:
       Validierung Sie die beiden Passwörter, damit password
       mit password2 übereinstimmt.
