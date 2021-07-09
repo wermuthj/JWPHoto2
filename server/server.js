@@ -77,7 +77,7 @@ app.post('/register', (req, res) => {
                 data.push(userObj);
                 return data;
             })
-            .then(data => userRepo.save(dalta))
+            .then(data => userRepo.save(data))
             .catch(error => {
                 console.error(error);
             });

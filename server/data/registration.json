@@ -122,5 +122,15 @@
     "firstname": "Janic",
     "phonenumber": "41763931066",
     "password2": "12345678"
+  },
+  {
+    "id": "5df19acd-8062-4046-9188-bda34434aa50",
+    "username": "fschmid",
+    "email": "soso@email.com",
+    "password": "12345678",
+    "lastname": "Wermuth",
+    "firstname": "Janic",
+    "phonenumber": "41763931066",
+    "password2": "12345678"
   }
 ]
