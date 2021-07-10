@@ -161,8 +161,10 @@ else {
 
     }
     else {
-      showSuccess(input1);
-      showSuccess(input2);
+      checkLength(password, 6, 25);
+      checkLength(password2, 6, 25);
+      //showSuccess(input1);
+      //showSuccess(input2);
       //alert("I love u it works.  ")
     }
   }
