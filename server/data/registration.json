@@ -222,5 +222,45 @@
     "firstname": "a",
     "phonenumber": "+41799474390",
     "password2": "12aa5789"
+  },
+  {
+    "id": "9ab7b8ab-924a-4cf2-b764-12d12df81f7c",
+    "username": "fschmid",
+    "email": "soso@email.com",
+    "password": "12345678",
+    "lastname": "Wermuth",
+    "firstname": "Janic",
+    "phonenumber": "41763931066",
+    "password2": "12345678"
+  },
+  {
+    "id": "0f13f6ff-3fc6-4f64-b19c-e783c4fe79dc",
+    "username": "fschmid",
+    "email": "soso@email.com",
+    "password": "12345678",
+    "lastname": "Wermuth",
+    "firstname": "j",
+    "phonenumber": "41763931066",
+    "password2": "12345678"
+  },
+  {
+    "id": "d0d7fe4e-80ee-46ec-8378-8a6816c72f07",
+    "username": "fschmid",
+    "email": "soso@email.com",
+    "password": "12345678",
+    "lastname": "Wermuth",
+    "firstname": "j",
+    "phonenumber": "41763931066",
+    "password2": "12345678"
+  },
+  {
+    "id": "bfcbfcae-d808-4ac1-9149-f17742c07e30",
+    "username": "fschmid",
+    "email": "soso@email.com",
+    "password": "12345678",
+    "lastname": "Wermuth",
+    "firstname": "j",
+    "phonenumber": "41763931066",
+    "password2": "12345678"
   }
 ]
