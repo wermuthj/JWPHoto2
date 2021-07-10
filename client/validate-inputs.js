@@ -58,7 +58,8 @@ function checkPhone(input) {
 function checkLastname(input) {
   const re = (/^[A-Za-z]+$/);
   if (re.test(input.value.trim())) {
-    showSuccess(input);
+    //showSuccess(input);
+    checkLength(lastname, 2, 50);
   } else {
     showError(input, 'Lastname is not valid');
   }
@@ -68,7 +69,8 @@ function checkLastname(input) {
 function checkFirstname(input) {
   const re = (/^[A-Za-z]+$/);
   if (re.test(input.value.trim())) {
-    showSuccess(input);
+    //showSuccess(input);
+    checkLength(firstname, 2, 20);
   } else {
     showError(input, 'Firstname is not valid');
   }
@@ -102,8 +104,7 @@ function checkLength(input, min, max) {
         `${getFieldName(input)} must be less than ${max} characters`
     );
   } else {
-    checkLastname(lastname);
-    checkFirstname(firstname);
+    showSuccess(input);
   }
 }
 
@@ -192,7 +193,8 @@ function validateForm(){
     //Aufgabe: Validierung der Länge für Vorname (2 bis 20) und Nachname (2 bis 50)
     checkLength(username, 3, 15);
     checkLength(password, 6, 25);
-    
+    checkLength(firstname, 2, 20);
+    checkLength(lastname, 2, 50);
     /* Aufgabe: 
     Validierung der Telefonnumer ähnlich wie bei der Email mit einer
       Regular expression (regex). Für eine geeignete regex suchen Sie
@@ -203,8 +205,6 @@ function validateForm(){
     checkPassword(password, password2);
     checkFirstname(firstname);
     checkLastname(lastname);
-    checkLength(firstname, 2, 20);
-    checkLength(lastname, 2, 50);
     /* Aufgabe:
       Validierung Sie die beiden Passwörter, damit password
       mit password2 übereinstimmt.
